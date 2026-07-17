@@ -41,6 +41,22 @@ const projects = [
     screenshotAlt: "DocuAgent dashboard showing a generated FAQ article with 100% grounding score"
   },
   {
+    title: "Project SENTINEL",
+    repo: "July 2026 – In Progress",
+    link: "#",
+    description: "Enterprise Multi-Agent AI Platform for Autonomous Risk Analysis and Decision Support.",
+    bullets: [
+      "Multi-LLM gateway with agent orchestration via LangChain",
+      "Retrieval-Augmented Generation (RAG) pipeline for context-aware risk analysis",
+      "REST API backend with PostgreSQL for structured decision data",
+      "Designed for autonomous, auditable decision support workflows"
+    ],
+    tech: ["LangChain", "AI Agent Orchestration", "Multi LLM Gateway", "RAG", "REST API", "PostgreSQL"],
+    icon: <ShieldCheck className="w-6 h-6" />,
+    screenshot: null,
+    screenshotAlt: ""
+  },
+  {
     title: "MarketForge",
     repo: "aribi-ahmed/Marketforge-ABM",
     link: "https://github.com/aribi-ahmed/Marketforge-ABM",
@@ -266,13 +282,6 @@ export default function Home() {
       <section className="relative min-h-[100dvh] flex flex-col justify-center pt-20 pb-10 overflow-hidden">
         <GridBackground />
         <div className="container mx-auto px-6 relative z-10">
-          <FadeIn delay={0.1}>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-mono mb-8">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_rgba(0,240,255,0.8)]" />
-              Available from July 2026 · 4-month internship · Open to relocation
-            </div>
-          </FadeIn>
-          
           <FadeIn delay={0.2}>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold tracking-tighter mb-4 text-gradient">
               Ahmed Aribi
@@ -283,7 +292,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-4 text-lg md:text-2xl font-mono text-muted-foreground mb-8">
               <span className="text-foreground">Engineering Student</span>
               <span className="w-1.5 h-1.5 rounded-full bg-primary/50 hidden md:block" />
-              <span className="text-primary">Aspiring AI Engineer</span>
+              <span className="text-primary">AI Engineer Intern @ Welyne</span>
             </div>
           </FadeIn>
 
@@ -446,6 +455,15 @@ export default function Home() {
               <h3 className="text-2xl font-display font-bold mb-6 flex items-center gap-3">
                 <BookOpen className="text-primary w-6 h-6" /> Experience
               </h3>
+              <div className="card-hover-effect p-6 mb-6">
+                <div className="card-content">
+                  <div className="flex items-center justify-between mb-2">
+                    <h4 className="text-xl font-bold font-display text-primary">Welyne</h4>
+                    <span className="font-mono text-xs text-muted-foreground bg-secondary px-2 py-0.5 rounded-sm">July 2026 – present</span>
+                  </div>
+                  <p className="font-mono text-sm text-foreground/80 mb-2">AI Engineer Intern · Hybrid</p>
+                </div>
+              </div>
               <div className="card-hover-effect p-6 mb-8">
                 <div className="card-content">
                   <div className="flex items-center justify-between mb-4">
@@ -514,10 +532,7 @@ export default function Home() {
       <section id="contact" className="py-24 border-t border-border/40 relative overflow-hidden bg-card/30">
         <div className="absolute inset-0 bg-primary/5 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] pointer-events-none" />
         <FadeIn className="text-center max-w-3xl mx-auto px-6 relative z-10">
-          <h2 className="text-4xl md:text-6xl font-display font-bold mb-6 text-gradient">Ready to build?</h2>
-          <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
-            I move fast, learn faster, and ship real solutions. Available for a 4-month internship starting July 2026. Open to relocation.
-          </p>
+          <h2 className="text-4xl md:text-6xl font-display font-bold mb-10 text-gradient">Ready to build?</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="mailto:ahmed.aribi@insat.ucar.tn" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-mono font-medium hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(0,240,255,0.2)] hover:shadow-[0_0_30px_rgba(0,240,255,0.5)]">
               <Mail className="w-5 h-5" /> Let's Talk
